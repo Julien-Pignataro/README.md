@@ -8,3 +8,12 @@
       align-items: center;
       text-align: center;
    }
+
+   .hero-services {
+            background-color: url(images/banner.jpg) center/cover no-repeat;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0;
+         }
