@@ -53,6 +53,26 @@
     position: relative;
     z-index: 2; /* passe au-dessus du voile */
   }
+
+  .title-underline {
+    width: 500px;
+    height: 4px;
+    background: #0d6efd;
+    margin: 10px 0 20px 0;
+  }
+
+   footer {
+      background: #222;
+      color: #ddd;
+      padding: 40px 0;
+    }
+    footer a {
+      color: #bbb;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: white;
+    }
 </style>
 
   <!-- A propos et compétences -->
@@ -62,6 +82,7 @@
         <!-- A propos -->
         <div class="col-md-6">
           <h3 class="mb-3">A propos</h3>
+          <div class="title-underline"></div>
           <img src="images/john-doe-about.jpg" alt="Photo" class="img-fluid mb-3 rounded">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, necessitatibus consectetur tempore.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, necessitatibus consectetur tempore.</p>
@@ -72,6 +93,7 @@
            <!-- Compétences -->
         <div class="col-md-6">
           <h3 class="mb-3">Mes compétences</h3>
+          <div class="title-underline"></div>
           <p>HTML5 90%</p>
           <div class="progress mb-3">
             <div class="progress-bar bg-danger" style="width: 90%"></div>
@@ -97,6 +119,46 @@
     </div>
   </section>
   </main>
+
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <!-- Coordonnées -->
+        <div class="col-md-4">
+          <h5>John Doe</h5>
+          <p>40 rue Lorem Ipsum<br>69000 Lyon, France<br>Tél : 10 20 30 40 50<br>john.doe@gmail.com</p>
+          <div>
+            <a href="#"><i class="fab fa-linkedin fa-lg me-3"></i></a>
+            <a href="#"><i class="fab fa-github fa-lg"></i></a>
+          </div>
+        </div>
+        <!-- Liens utiles -->
+        <div class="col-md-4">
+          <h5>Liens utiles</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Me contacter</a></li>
+            <li><a href="#">Mentions légales</a></li>
+          </ul>
+        </div>
+        <!-- Réalisations -->
+        <div class="col-md-4">
+          <h5>Mes dernières réalisations</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Fresh Food</a></li>
+            <li><a href="#">Restaurant Akira</a></li>
+            <li><a href="#">Espace bien être</a></li>
+            <li><a href="#">SEO</a></li>
+            <li><a href="#">Création d'une API</a></li>
+            <li><a href="#">Maquette d’un site</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
