@@ -16,19 +16,12 @@
     background: #0d6efd;
     margin: 10px 0 20px 0;
   }
-
-   footer {
-      background: #222;
-      color: #ddd;
-      padding: 40px 0;
-    }
-    footer a {
-      color: #bbb;
-      text-decoration: none;
-    }
-    footer a:hover {
-      color: white;
-    }
+  .title-underline2 {
+   width: 400px;
+   height: 4px;
+   background: #0d6efd;
+   margin: 10px 0 30px 0;
+  }
 
     img {
             width: 1520px;
@@ -39,12 +32,6 @@
             min-height: 150px;
          }
 
-        .title-underline {
-            width: 400px;
-            height: 4px;
-            background: #0d6efd;
-            margin: 10px auto 30px auto;
-        }
 
         .service-box {
             border: 1px solid #ddd;
@@ -65,6 +52,24 @@
          text-align: center;
          padding: 10px;
          font-size: 0.9rem;
+        }
+
+        #contact h4 {
+         font-size: 2rem;
+        }
+
+        #contact .form-control {
+         border-radius: 0.25rem;
+        }
+
+        #contact button {
+         border-radius: 5px;
+         font-weight: 500;
+        }
+
+        
+        #contact .p-4 {
+         min-height: 100%;
         }
 
        footer {
