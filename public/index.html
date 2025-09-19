@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="public/images/anonym.png">
   <link rel="stylesheet" href="styles.css">
   <title>Portfolio - John Doe</title>
@@ -38,8 +40,54 @@
   <div class="content">
     <h1>Bonjour, je suis John Doe</h1>
     <p class="lead">Développeur web full stack</p>
-    <a href="https://api.github.com/users/github-john-" class="btn btn-danger btn-lg mt-3">En savoir plus</a>
+    <!-- Bouton déjà existant -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#profilModal">
+  En savoir plus
+</button>
   </div>
+  <div class="modal fade" id="profilModal" tabindex="-1" aria-labelledby="profilModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      
+      <!-- En-tête -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="profilModalLabel">Mon profil GitHub</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+
+      <!-- Corps -->
+      <div class="modal-body">
+        <div class="row">
+          <!-- Image -->
+          <div class="col-md-4 text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/3f/Doraemon_character.png"
+                 alt="Profil" class="img-fluid rounded">
+          </div>
+
+          <!-- Infos -->
+          <div class="col-md-8">
+            <h6><a href="#" class="text-info">John Doe</a></h6>
+            <p>
+              <i class="bi bi-geo-alt"></i>  
+              As we all know, John Doe's identity is unknown.  
+              I just wanted to contribute without being known.
+            </p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-journal-code"></i> Repositories : 1</li>
+              <li><i class="bi bi-people"></i> Followers : 16</li>
+              <li><i class="bi bi-person"></i> Following : 0</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pied -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 
   <!-- A propos et compétences -->
