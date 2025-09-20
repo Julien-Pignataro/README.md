@@ -1,19 +1,83 @@
-   .hero {
-      background: url(images/hero-bg.jpg);
-      height: 100vh;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-   }
+  
+  .hero {
+    position: relative;
+    background: url('images/hero-bg.jpg');
+    height: 100vh;
+  }
 
-   .hero-services {
-            background-color: url(images/banner.jpg) center/cover no-repeat;
-            min-height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 0;
+  .hero .content {
+    position: relative;
+    z-index: 2; /* passe au-dessus du voile */
+  }
+
+  .title-underline {
+    width: 500px;
+    height: 4px;
+    background: #0d6efd;
+    margin: 10px 0 20px 0;
+  }
+
+   footer {
+      background: #222;
+      color: #ddd;
+      padding: 40px 0;
+    }
+    footer a {
+      color: #bbb;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: white;
+    }
+
+    img {
+            width: 1520px;
+            height: 300px;
+        }
+
+        .hero-services {
+            min-height: 150px;
+         }
+
+        .title-underline {
+            width: 400px;
+            height: 4px;
+            background: #0d6efd;
+            margin: 10px auto 30px auto;
+        }
+
+        .service-box {
+            border: 1px solid #ddd;
+            padding: 30px;
+            border-radius: 8px;
+            transition: all 0.3 ease;
+            background: #fff;
+        }
+
+        .service-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .tech-box {
+         background-color: #f8f9fa;
+         border-top: 1px solid #dee2e6;
+         text-align: center;
+         padding: 10px;
+         font-size: 0.9rem;
+        }
+
+       footer {
+            background: #222;
+            color: #ddd;
+            padding: 40px 0;
+         }
+
+       footer a {
+            color: #bbb;
+            text-decoration: none;
+         }
+
+       footer a:hover {
+            color: white;
          }
