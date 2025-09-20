@@ -1,4 +1,4 @@
-  
+
   .hero {
     position: relative;
     background: url('images/hero-bg.jpg');
@@ -70,6 +70,18 @@
         
         #contact .p-4 {
          min-height: 100%;
+        }
+
+        .custom-card {
+         background-color: #efefef;
+         border-radius: 8px;
+         transition: box-shadow 0.3s ease, transform 0.3s ease;
+         cursor: pointer;
+        }
+
+        .custom-card:hover {
+         box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+         transform: translateY(-2px);
         }
 
        footer {
